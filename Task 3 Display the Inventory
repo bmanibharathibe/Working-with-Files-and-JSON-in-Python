@@ -1,0 +1,6 @@
+# Task 3: Display updated inventory
+with open("inventory.json", "r") as file:
+    updated_inventory = json.load(file)
+
+for book in updated_inventory:
+    print(f"Title: {book['title']} | Author: {book['author']} | Price: ${book['price']}")
