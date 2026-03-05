@@ -1,0 +1,14 @@
+# New book to add
+new_book = {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "price": 14.99,
+    "in_stock": True
+}
+
+# Task 2: Append new book
+inventory.append(new_book)
+
+# Save updated inventory
+with open("inventory.json", "w") as file:
+    json.dump(inventory, file, indent=4)
